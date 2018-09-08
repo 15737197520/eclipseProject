@@ -1,0 +1,352 @@
+@CHARSET "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin: 0px;
+	padding: 0px;
+	font: 12px/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div, p, h1, h2, h3, textarea {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.grzxTabBox {
+	padding: 0px 23px 30px 23px;
+}
+.grzxRightBox > div.moduleItem {
+	border: 1px solid #ededed;
+	border-radius: 5px;
+	margin-top: 15px;
+	background-color: #fff;
+}
+.grzxRightBox {
+	width: 920px;
+	float: right;
+}
+.clearfix {
+	*zoom:1: ;
+}
+.mainInnerBox {
+	width: 1042px;
+	margin: 0px auto;
+	display: block;
+	font-size: inherit;
+}
+.grzxOuterBox {
+	background-color: #f6f7f8;
+	padding: 34px 0px 30px 0px;
+}
+html {
+	color: #333;
+	background: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+.grzxTabUl {
+	border-bottom: 3px solid #ebeef1;
+	height: 57px;
+}
+.grzx_ddList {
+	margin: 17px 0px 0px 0px;
+}
+.xxPageBox {
+	padding-top: 30px;
+}
+.sitePageBox {
+	text-align: center;
+	font-size: 0px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+.gqDDListTable {
+	width: 100%;
+}
+.gqDDListTable tbody tr:first-child {
+	height: 10px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.gqDDListTable tbody .ftTr {
+	background-color: #f6f7f8;
+	height: 35px;
+	text-indent: 15px;
+	border-top: 1px solid #e4e4e4;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
+}
+.gqDDListTable .inforTr {
+	border: 1px solid #e4e4e4;
+	border-top: 1px solid #f0f0f0;
+}
+.gqDDListTable .btnTd {
+	text-align: center;
+	position: relative;
+}
+.gqDDListTable tbody .inforTr td {
+	padding: 28px 0px;
+}
+a, .btn {
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	*color:#333: ;
+	text-decoration: none;
+}
+[ng:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+.colorA02Link {
+	color: #50abf2 !important;
+	text-decoration: none;
+}
+.btn_ALink {
+	text-decoration: none;
+	color: inherit;
+	*color:#333: ;
+}
+.gray {
+	color: #b1b1b1;
+}
+.siteIlB_box > *, .siteIlB_item {
+	vertical-align: top;
+	font-size: 12px;
+	display: inline-block;
+	*display: inline: ;
+	*zoom: 1: ;
+}
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity .35s linear;
+	-o-transition: opacity .35s linear;
+	transition: opacity .35s linear;
+	display: none;
+	height: 0px;
+}
+.ng-hide {
+	display: none !important;
+}
+.fqr_linkA {
+	position: relative;
+}
+.ddLastbtn_A {
+	width: 72px;
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+	margin: 0 0 5px 0;
+	cursor: pointer;
+	background-color: #ff6520;
+	border-radius: 3px;
+	color: #fff;
+}
+.tc {
+	text-align: center;
+}
+.ddImgBox {
+	width: 80px;
+	height: 60px;
+	float: left;
+	margin-left: 10px;
+}
+.ddImgText {
+	margin-left: 10px;
+	float: left;
+	width: 180px;
+}
+.gqDDListTable tbody .inforTr td > div {
+	min-height: 60px;
+}
+.lottery_A {
+	width: 65px;
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+	margin: 0px 0 5px 0;
+	cursor: pointer;
+	background-color: #ff6520;
+	border-radius: 3px;
+	color: #fff;
+}
+.gqDDListTable .inforText_p {
+	text-align: center;
+	min-height: 20px;
+}
+.gqDDListTable .inforText_p.gray {
+	color: #999;
+}
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity .35s linear;
+	-o-transition: opacity .35s linear;
+	transition: opacity 0.35s linear;
+}
+.tooltip {
+	position: absolute;
+	z-index: 1070;
+	max-width: 500px;
+	display: block;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.4285;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+	white-space: normal;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	line-break: auto;
+}
+.fade.in {
+	opacity: 1;
+	height: auto;
+}
+.fade.in {
+	opacity: 1;
+}
+.tooltip.in {
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+.tooltip.bottom {
+	padding: 5px 0;
+	margin-top: 3px;
+}
+.tooltip-arrow {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-color: transparent;
+	border-style: solid;
+}
+.tooltip.bottom .tooltip-arrow {
+	top: 0px;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #000;
+}
+.tooltip-inner {
+	min-width: 200px;
+	padding: 3px 8px;
+	color: #fff;
+	text-align: left;
+	background-color: #000;
+	border-radius: 4px;
+}
+.ddLastbtn_B {
+	color: #ff6520;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+}
+.gqDDListTable .inforRatioBox {
+	height: 20px;
+	width: 140px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.gqDDListTable .inforRatioBox .inforRatio {
+	width: 62px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #e4e4e4;
+	overflow: hidden;
+	margin: 7px 0px 7px 0px;
+	float: left;
+	margin-left: 18px;
+}
+.gqDDListTable .inforRatioBox span {
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	min-width: 30px;
+	margin-left: 5px;
+	text-align: center;
+}
+.gqDDListTable .inforRatio .inner {
+	height: 6px;
+	background-color: #55acef;
+}
+.site_ALink {
+	text-decoration: none;
+	color: inherit;
+	*color: #333: ;
+}
+.ddImgText > a {
+	display: block;
+	line-height: 20px;
+	height: 40px;
+	overflow: hidden;
+}
+.siteIlB_box {
+	font-size: 0px;
+}
+.jlzc_ddImgText a {
+	margin-right: 10px;
+	height: 20px;
+	line-height: 20px;
+}
+.jlzc_ddImgText a:first-child {
+	margin-left: 0px;
+}
+fieldset, img {
+	border: 0;
+	vertical-align: top;
+}
+.siteImgBox img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.ddImgBox img {
+	width: 80px;
+	height: 60px;
+}
+.gqDDListTable tbody .ftTr .dingdan {
+	margin-left: 18px;
+}
+address, caption, cite, code, dfn, em, strong, th, var, b, i {
+	font-style: normal;
+	font-weight: normal;
+}
+.gqDDListTable thead th {
+	background-color: #eaebec;
+}
+.gqDDListTable tr:first-child td:first-child, .gqDDListTable th:first-child {
+	text-indent: 15px;
+	text-align: left;
+}
+.gqDDListTable tbody .ftTr .ftTr_delA {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../images/grzxBg.png) no-repeat 0px -72px;
+	margin: 0px auto;
+}
+.gqDDListTable thead tr {
+	border: 1px solid #eceaea;
+	height: 37px;
+}
+.grzxTabUl .grzxTabLi {
+	height: 57px;
+	line-height: 57px;
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 3px solid #ebeef1;
+	padding: 0px 20px;
+}
+.grzxTabUl .grzxTabLi.cur {
+	border-bottom: 3px solid #50abf2;
+}

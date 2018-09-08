@@ -1,0 +1,286 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin: 0px;
+	padding: 0px;
+	font: 12px/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div, p, h1, h2, h3, textarea {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	font: 12px/1.5 'zc',"Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.slide-container {
+	position: relative;
+	width: 660px;
+	overflow: hidden;
+}
+
+.animate-slide {
+	position: relative;
+	*position: relative: ;
+	top: 0px;
+	width: 100%;
+}
+.ui-view-container {
+	position: relative;
+	margin: 0 auto;
+	top: 0px;
+	height: 100%;
+	min-height: 400px;
+	width: 100%;
+	overflow: hidden;
+}
+.zhifuCBox {
+	width: 660px;
+	margin: 0px auto 0px auto;
+	padding: 40px 0px 40px 0px;
+}
+.zhifuInnerBox {
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+	background-color: #fff;
+}
+.mainIn02Box {
+	width: 1024px;
+	margin: 0px auto;
+	display: block;
+	font-size: inherit;
+}
+.zhifuOuterBox {
+	background-color: #f5f6f8;
+	padding: 0px 0px 90px 0px;
+}
+.hidden {
+	display: none;
+}
+.hidden {
+	display: none;
+}
+.grzxOuterBox {
+	background: #f5f6f8;
+	padding-top: 30px;
+}
+html {
+	color: #333;
+	background: #fff;
+}
+a, .btn {
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	*color:#333: ;
+	text-decoration: none;
+}
+.tjdd_h3 {
+	color: #666;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 18px;
+	font-family: "ËÎÌו";
+}
+a.tjdd_h3 {
+	color: #50abf2 !important;
+	display: block;
+}
+.tjdd_item {
+	border: 4px solid #f1f1f1;
+	border-top: none;
+	padding: 0px 22px;
+	position: relative;
+}
+.animate-reward {
+	background: white;
+	overflow: hidden;
+}
+.tjdd_item.cur {
+	display: block !important;
+	border: 4px solid #50abf2 !important;
+}
+:first-child.tjdd_item {
+	border-top: 4px solid #f1f1f1;
+}
+.support_h3 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #50abf2;
+	height: 36px;
+	line-height: 36px;
+	padding: 23px 0px 14px 0px;
+}
+.support_title {
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 7px;
+}
+.support_inforP {
+	line-height: 24px;
+	color: #666666;
+	padding: 7px 0px 18px 0px;
+}
+.supportFooter {
+	height: 50px;
+	padding: 16px 0px;
+	border-top: 1px solid #dcdcdc;
+}
+.supportFLeft {
+	margin-top: 3px;
+	float: left;
+}
+.supportFRight {
+	float: right;
+}
+.supportFLeft p {
+	line-height: 22px;
+	color: #666;
+}
+address, caption, cite, code, dfn, em, strong, th, var, b, i {
+	font-style: normal;
+	font-weight: normal;
+}
+.supportFLeft p b {
+	font-weight: bold;
+	color: #333;
+}
+.support_h3 b {
+	color: #666666;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.slide-container {
+	position: relative;
+	width: 660px;
+	overflow: hidden;
+}
+.animate-slide {
+	position: relative;
+	*position: relative: ;
+	top: 0px;
+	width: 100%;
+}
+.ui-view-container {
+	position: relative;
+	margin: 0 auto;
+	top: 0px;
+	height: 100%;
+	min-height: 400px;
+	width: 100%;
+	overflow: hidden;
+}
+.zhifuCBox {
+	width: 660px;
+	margin: 0px auto 0px auto;
+	padding: 40px 0px 40px 0px;
+}
+.zhifuInnerBox {
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+	background-color: #fff;
+}
+.mainIn02Box {
+	width: 1024px;
+	margin: 0px auto;
+	display: block;
+	font-size: inherit;
+}
+.zhifuOuterBox {
+	background-color: #f5f6f8;
+	padding: 0px 0px 90px 0px;
+}
+.hidden {
+	display: none;
+}
+.hidden {
+	display: none;
+}
+.grzxOuterBox {
+	background: #f5f6f8;
+	padding-top: 30px;
+}
+html {
+	color: #333;
+	background: #fff;
+}
+.tjdd_QHCont {
+	width: 462px;
+	margin: 0px auto;
+}
+.wszc_QHBox {
+	padding: 30px 0px 0px 0px;
+}
+.shdzForm_xnBox {
+	margin: 0px 0px 0px 0px;
+}
+.zj_valP {
+	font-size: 16px;
+	text-align: right;
+	padding: 0px 18px 0px 0px;
+	margin: 10px 0px -20px 0px;
+}
+.tjdd_submitBtn {
+	height: 46px;
+	display: block;
+	border: 1px solid #3d9ee9;
+	font-size: 16px;
+	color: #fff;
+	background-color: #50abf2;
+	width: 260px;
+	margin-top: 25px;
+	float: right;
+}
+button, input[type='button'], input[type='reset'], input[type='submit'], input[type='file'] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+.zj_valP span {
+	font-size: 24px;
+	color: #50abf2;
+	padding-left: 8px;
+}
+address, caption, cite, code, dfn, em, strong, th, var, b, i {
+	font-style: normal;
+	font-weight: normal;
+}
+.zj_valP span b {
+	font-weight: bold;
+}
+
+.clearfix {
+	zoom: 1;
+}
+.tjdd_formItem {
+	margin: 20px 0px 0px 0px;
+	position: relative;
+}
+:first-child.tjdd_formItem {
+	margin: 0px 0px 0px 0px;
+}
+.sitePHBox {
+	position: relative;
+}
+.tjddQHFGBox {
+	font-size: 14px;
+}
+.tjdd_QHInput {
+	width: 145px;
+	height: 20px;
+	line-height: 20px;
+	padding: 6px 10px;
+	border: 1px solid #eee;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+}
+.tjdd_QHInput.w440 {
+	width: 440px;
+}
+span.placeholder {
+	position: absolute;
+	top: 5px;
+	color: #999;
+}

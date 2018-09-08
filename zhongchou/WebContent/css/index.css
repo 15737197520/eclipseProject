@@ -1,0 +1,308 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin: 0px;
+	padding: 0px;
+	font: 12px/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div, p, h1, h2, h3, textarea {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.indexBanner {
+	border-bottom: 1px #e4e4e4 solid;
+	overflow: hidden;
+	width: 100%;
+	height: 360px;
+	position: relative;
+	z-index: 1;
+}
+html {
+	color: #333;
+	background: #fff;
+}
+.indexBannerView {
+	height: 360px;
+	margin: 0 auto !important;
+	overflow: visible !important;
+	max-width: 1600px;
+	position: relative;
+}
+.indexBMask {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	height: 0px;
+}
+.indexBMask > span {
+	background: url(../../../v3/static/images/bg_mv.png?v=1471516090) repeat;
+	width: 50%;
+	height: 360px;
+	position: absolute;
+	top: 0px;
+}
+.indexBMask > span.leftItem {
+	left: 0px;
+	margin-left: -800px;
+}
+.indexBMask > span.rightItem {
+	right: 0px;
+	margin-right: -800px;
+}
+ol, ul {
+	list-style: none;
+}
+.indexBanner .indexB_ul {
+	height: 360px;
+	overflow: hidden;
+	position: absolute;
+}
+.indexBControls {
+	position: absolute;
+	width: 1042px;
+	height: 0px;
+	bottom: 30px;
+	right: 50%;
+	margin-right: -521px;
+	text-align: right;
+	font-size: 0px;
+}
+.indexBPage {
+	position: absolute;
+	width: 1042px;
+	height: 0px;
+	left: 50%;
+	margin-left: -521px;
+	top: 150px;
+}
+a, .btn {
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	*color:#333: ;
+	text-decoration: none;
+}
+.indexBPage > a {
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+	background: url(../../../v3/static/images/indexBannerBtn.png?v=1471516090) no-repeat;
+	width: 39px;
+	height: 51px;
+	position: absolute;
+}
+.indexBPage > .pre {
+	background-position: 0px 0px;
+	left: 0px;
+}
+.indexBPage > .next {
+	background-position: 0px -51px;
+	right: 0px;
+}
+.indexBPageitem {
+	display: inline-block;
+	*display: inline: ;
+	*zoom:1: ;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	margin-right: 6px;
+	cursor: pointer;
+}
+.indexBPageitem.cur {
+	background-color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.indexBanner .indexB_ul li {
+	margin: 0 auto;
+	float: left;
+	background: url(../../../v3/static/images/loading.gif?v=1471516090) center no-repeat;
+}
+.indexBanner .indexB_ul li a {
+	height: 360px;
+	display: block;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.indCardItem {
+	width: 320px;
+	border: 1px solid #dcdcdc;
+	height: 485px;
+	border-radius: 5px;
+	float: left;
+	margin: 30px 0px 0px 38px;
+	overflow: hidden;
+}
+.clearfix {
+	*zoom:1: ;
+}
+.indCardListWrap {
+	margin-left: -38px;
+}
+.mainInnerBox {
+	width: 1042px;
+	margin: 0px auto;
+	display: block;
+	font-size: inherit;
+}
+html {
+	color: #333;
+	background: #fff;
+}
+a, .btn {
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	*color:#333: ;
+	text-decoration: none;
+}
+.siteCardItemImgA {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.siteCardItemImgA.ind {
+	height: 240px;
+}
+.siteCardICBox {
+	background-repeat: no-repeat;
+}
+.indCardICBox {
+	padding: 0px 19px;
+	background-position: right 96px;
+}
+.indCardICText {
+	height: 139px;
+}
+.siteCardFBox {
+	padding: 16px 0px 0px 0px;
+	border-top: 1px dashed #dcdcdc;
+}
+.siteIlB_box {
+	font-size: 0px;
+}
+.siteCardFLabelBox {
+	background: url(../../../v3/static/images/indexDatabg.png?v=1471516090) 0px -90px no-repeat;
+	padding-left: 20px;
+	height: 20px;
+	overflow: hidden;
+}
+.siteCardRatio {
+	height: 6px;
+	border-radius: 3px;
+	background-color: #e4e4e4;
+	margin: 10px 0px 7px 0px;
+	overflow: hidden;
+}
+.siteCardFData {
+	position: relative;
+	text-align: center;
+}
+.siteCardFData .ftDiv {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-align: left;
+}
+.siteCardFData .scDiv {
+	height: 46px;
+	display: inline-block;
+	*display:inline: ;
+	*zoom:1: ;
+}
+.siteCardFData .thDiv {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	text-align: left;
+}
+.siteCardFData > div .ftP {
+	font-weight: bold;
+}
+.siteCardFData > div .scP {
+	color: #999999;
+	font-size: 11px;
+}
+.siteCardFData .ftDiv .ftP {
+	color: #ff5001;
+}
+.siteCardRatio > .siteCardRatioInner {
+	height: 6px;
+	background-color: #50abf2;
+}
+.site_ALink {
+	text-decoration: none;
+	color: inherit;
+	*color: #333: ;
+}
+.siteIlB_box > *, .siteIlB_item {
+	vertical-align: top;
+	font-size: 12px;
+	display: inline-block;
+	*display: inline: ;
+	*zoom: 1: ;
+}
+.siteCardFLabelBox a {
+	height: 20px;
+	line-height: 20px;
+	margin-left: 7px;
+	font-size: 11px;
+	color: #999999;
+}
+.siteCardFLabelBox a:first-child {
+	margin-left: 0px;
+}
+.siteCardICH3 {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #222;
+	line-height: 20px;
+	max-height: 40px;
+	overflow: hidden;
+	padding-top: 15px;
+	text-decoration: none;
+	word-break: break-all;
+}
+.siteCardIC_p {
+	color: #888888;
+	line-height: 20px;
+	margin-top: 6px;
+	font-size: 11px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-orient: vertical;
+}
+.siteCardIC_p.ind {
+	height: 60px;
+	-webkit-line-clamp: 3;
+}
+fieldset, img {
+	border: 0;
+	vertical-align: top;
+}
+.siteCardItemImgA > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.siteCardStatus {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 57px;
+	height: 56px;
+	background: url(../../../v3/static/images/cardStatusBg.png?v=1471516090) no-repeat;
+	display: none;
+}

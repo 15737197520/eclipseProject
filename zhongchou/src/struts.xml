@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+ <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+ <constant name="struts.i18n.encoding"  value="UTF-8"/> 
+ <constant name="struts.custom.i18n.resources"  value="msg"/> 
+ <constant name="struts.multipart.maxSize" value="5000000000" />
+ 
+ <package name="admin" extends="struts-default">
+ 
+<!--  
+<interceptor name="userCheck" class="dmi.UserCheckIntercepter" /> 
+<interceptor-ref name="userCheck"/>
+-->
+    <interceptors>
+    	<interceptor-stack name="myStack">
+    		<interceptor-ref name="fileUpload">  
+  					<param name="maximumSize">5000000000</param>  
+			</interceptor-ref> 
+    		<interceptor-ref name="defaultStack"/>	
+    	</interceptor-stack> 	
+    </interceptors>
+<!-- 首页 -->
+<action name="index" class="action.GoodsAction" method="index">
+	<result type="dispatcher">/user/index.jsp</result>
+</action>
+<action name="toCreate" class="action.GoodsAction" method="toCreate">
+	<result>/user/addGoods.jsp</result>
+	<result name="error" type="chain">toLogin</result>
+</action>
+<action name="toTop">
+	<result>/user/top.jsp</result>
+</action>
+<action name="left">
+	<result>/user/left.jsp</result>
+</action>
+<action name="myOrder">
+	<result>/user/myOrder.jsp</result>
+</action>
+<action name="toOrder" class="action.OrderAction" method="toOrder">
+<result>/user/toOrder.jsp</result>
+<result name="error" type="chain">toLogin</result>
+</action>
+<action name="toCenter">
+	<result type="dispatcher">/user/rightContent.jsp</result>
+</action>
+<action name="supported">                           <!-- 支付成功后跳转的页面 -->
+	<result>/user/supported.jsp</result>
+</action>
+<action name="createOrder" class="action.OrderAction" method="createOrder">
+	<result>/user/pay.jsp</result>
+	<result name="input">/user/toOrder.jsp</result>
+</action>
+<!-- 查询订单前先查用户 -->
+<action name="showUser" class="action.AdminAction" method="showUser">
+	<result>/admin/showUser.jsp</result>
+</action>
+
+<!-- 管理员查询用户订单 -->
+<action name="showUserOrder" class="action.OrderAction" method="showUserOrder">
+	<result>/admin/showUserOrder.jsp</result>
+</action>
+
+<!-- 删除订单 -->
+<action name="deleteOrder" class="action.OrderAction" method="deleteOrder">
+	<result >/admin/showUserOrder.jsp</result><!-- ??????????????? -->
+	<result name="input">/admin/showUserOrder.jsp</result>
+</action>
+<!-- 查看删除订单 -->
+<action name="showDeleteOrder" class="action.OrderAction" method="showDeleteOrder">
+	<result>/admin/showDeleteOrder.jsp</result>
+</action>
+
+<!-- 管理员登陆 -->                           <!-- 怎样让管理员未登录的时候不能访问     拦截器实现-->
+<action name="adminLogin" class="action.AdminAction" method="login">
+	<result name="success">/admin/adminIndexframe.jsp</result>
+	<result name="error" >/admin/adminLogin.jsp</result>
+	<result name="none">/admin/adminLogin.jsp</result> 
+</action>
+<!-- 管理员退出 -->
+<action name="adminLogout" class="action.AdminAction" method="logout">
+	<result name="success"  type="redirect">/admin/adminLogin.jsp</result>
+</action>
+<!-- 查询所有用户 -->
+<action name="showAllUser" class="action.AdminAction" method="showAllUser">
+	<result>/admin/showAllUser.jsp</result>
+</action>
+<!-- 删除用户 -->
+<action name="deleteUser" class="action.AdminAction" method="deleteUser">
+	<result name="success" type="chain">showAllUser</result><!-- 这个地方是不是要改一下action showAllUser -->
+</action>
+<!-- 添加用户 -->
+<action name="addUser" class="action.UserAction" method="addUser">
+	<result>/admin/addUser.jsp</result>
+	<result name="error">/admin/addUser.jsp</result>
+</action>
+<!-- 修改前先查询，跳转到modifyUser页面 -->
+<action name="toModifyPage"  class="action.AdminAction" method="toModifyPage">
+	<result>/admin/modifyUser.jsp</result>
+</action>
+<!-- 修改用户信息 -->
+<action name="modifyUser" class="action.UserAction" method="modifyUser">
+	<result type="chain">showAllUser</result>
+	<result name="error">/admin/modifyUser.jsp</result>
+</action>
+<!-- 商品详细信息 -->
+<action name="showDetail" class="action.GoodsAction" method="showDetail">
+	<result>/user/detail.jsp</result>
+</action>
+
+<action name="adminHead">
+	<result >/user/head2.jsp</result>
+</action>
+<!-- 添加众筹商品 
+<interceptor-ref name="myStack"/>
+-->
+<action name="addGoods" class="action.GoodsAction" method="addGoods">
+    
+ 	<result >/user/addSuccess.jsp</result>
+ 	<result name="input">/user/addGoods.jsp</result>
+</action>
+<!-- 审核众筹商品 -->
+<action name="checkGoods" class="action.GoodsAction" method="checkGoods">
+	<result>/admin/checkGoods.jsp</result><!-- 属性配页面 -->
+</action>
+<!-- 审核通过 -->
+<action name="checkPass" class="action.GoodsAction" method="checkPass">
+	<result type="chain">checkGoods</result>
+</action>
+<!-- 拒绝后通过 -->
+<action name="RcheckPass" class="action.GoodsAction" method="RcheckPass">
+	<result type="chain">showRejected</result><!-- 可以说是属性配页面，这只是控制页面还是action!!不行 --><!-- another method ！！！！session配jsp页面居然不行-->
+</action>
+
+<!-- 审核拒绝 -->
+<action name="checkReject" class="action.GoodsAction" method="checkReject">
+	<result type="chain">checkGoods</result><!-- 换种方式？ -->
+</action>
+<!-- 通过后拒绝 -->
+<action name="PcheckReject" class="action.GoodsAction" method="PcheckReject">
+	<result type="chain">showPassed</result><!-- 换种方式？ --><!-- 可以说是属性配页面，这只是控制页面还是action -->
+</action>
+<!-- 查看已审核商品 -->
+<action name="showPassed" class="action.GoodsAction" method="showPassed">
+	<result>/admin/showPassed.jsp</result><!-- 属性配页面 -->
+</action>
+<!-- 查看已拒绝商品 -->
+<action name="showRejected" class="action.GoodsAction" method="showRejected">
+	<result>/admin/showRejected.jsp</result><!-- 属性加页面 -->
+</action>
+<!-- 删除商品 -->
+<action name="deleteGoods" class="action.GoodsAction" method="deleteGoods">
+	<result type="chain">showRejected</result><!-- 或者其他的写法 -->
+</action>
+<!-- 用户功能 -->
+<action name="toReg">
+	<result>/user/register.jsp</result>
+</action>
+<action name="register" class="action.UserAction" method="register">
+	<result type="chain">toLogin</result>
+	<result name="error" type="chain">toReg</result>
+</action>
+<!-- 用户登陆 -->
+<action name="toLogin">
+  	<result type="dispatcher">/user/login.jsp</result>
+</action>
+<action name="userLogin" class="action.UserAction" method="userLogin">
+	<result type="redirectAction">index</result>
+	<result name="error">/user/login.jsp</result>
+	<result name="none">/user/login.jsp</result>
+</action>
+<!-- 用户退出登陆 -->
+<action name="userLogout" class="action.UserAction" method="userLogout">
+	<result type="dispatcher">/user/login.jsp</result>
+</action>
+<!-- 用户查询订单 -->
+<action name="showOrder" class="action.OrderAction" method="showOrder">
+	<result type="dispatcher">/user/myOrder.jsp</result>
+
+</action>
+  <!-- 
+   
+   <action name="login" class="dmi.UserAction"  method="login">
+      <result name="login_success">/loginsuccess.jsp</result>
+      <result name="login_fail">/login.jsp</result>
+	  <result name="input">/error.jsp</result>
+   </action>
+   
+      <action name="logOut" class="dmi.UserAction" method="logOut">
+      <result name="logoutSuccess">/login.jsp</result>
+      <result name="input">/error.jsp</result>
+   </action>
+   
+   <action name="downLoad" class="dmi.DownloadAction">
+       <param name="path">/uploadFiles</param>
+       <result type="stream">
+          <param name="contentType">application/octet-stream</param>
+          <param name="inputName">inputStream</param>
+          <param name="contentDisposition">attachment;filename=${fileName}</param>
+          <param name="bufferSize">2048</param>
+       </result>
+   </action>
+   
+
+   
+   <action name="userShow">
+   		<interceptor-ref name="myStack"/>
+   		<result name="success">/WEB-INF/userShow.jsp</result>
+   		<result name="login">/login.jsp</result>
+   
+   </action>
+   -->
+ </package>
+
+</struts>

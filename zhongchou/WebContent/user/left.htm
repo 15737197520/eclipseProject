@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="ng-scope" id="ng-app">
+<head>
+<title></title>
+<link href="../css/left.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="grzxOuterBox">
+<div class="mainInnerBox clearfix" style="position:relative;">
+<div class="ng-scope" style="min-height:400px;" ng-element-ready="" data-ui-view="">
+<div class="grzxLeftBox">
+ 
+    <div class="grzxLNavItem" >
+        <!--<h3>发起中心</h3>-->
+
+        <div class="grzxLNav">
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/launch" ui-sref=".launch">我的发起</a>
+            </div>
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="/corp-order" target="_blank" ng-href="/corp-order">项目管理</a>
+            </div>
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="grzxLNavItem">-->
+        <!--<h3>订单</h3>-->
+
+        <!--<div class="grzxLNav">-->
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink cur" href="#/user-center/reward-order" ui-sref=".rewardOrder">我的订单</a>
+            </div>
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="http://www.zhongchou.com/auth-wxlc?type=quan" target="_blank">我的理财券</a>
+            </div>
+            <!--<div class="grzxLNavABox">-->
+                <!--<a href="javascript:;" ui-sref=".equityOrder" class="site_hoverCssA btn_ALink">股权订单</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="grzxLNavItem ng-hide" ng-show="isYSH">
+        <h3>发起项目</h3>
+
+        <div class="grzxLNav">
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/launch" ui-sref=".launch">我的发起</a>
+            </div>
+            <!--<div class="grzxLNavABox">-->
+            <!--<a href="javascript:;" ui-sref=".equityOrder" class="site_hoverCssA btn_ALink">股权订单</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="grzxLNavItem ng-hide" ng-show="isYSH">
+        <h3>订单</h3>
+
+        <div class="grzxLNav">
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/equity-order" ui-sref=".equityOrder">预约订单</a>
+            </div>
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/equity-order-buy" ui-sref=".equityOrderBuy">认购订单</a>
+            </div>
+        </div>
+    </div>
+    <div class="grzxLNavItem">
+        <h3>我的</h3>
+
+        <div class="grzxLNav">
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/focus" ui-sref=".focus">我的关注</a>
+            </div>
+            <!-- ngIf: !isYSH --><div class="grzxLNavABox ng-scope" ng-if="!isYSH">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/account" ui-sref=".account">账户余额</a>
+            </div><!-- end ngIf: !isYSH -->
+            <!-- ngIf: !isYSH --><div class="grzxLNavABox ng-scope" ng-if="!isYSH">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/hongbao" ui-sref=".hongbao">我的红包</a>
+            </div><!-- end ngIf: !isYSH -->
+            <!-- ngIf: !isYSH --><div class="grzxLNavABox ng-scope" ng-if="!isYSH">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/coupon" ui-sref=".coupon">抵用券</a>
+            </div><!-- end ngIf: !isYSH -->
+            <!--<div class="grzxLNavABox">-->
+                <!--<a href="javascript:;" ui-sref=".invitationCode" class="site_hoverCssA btn_ALink">邀请码</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="grzxLNavItem">
+        <h3>消息</h3>
+
+        <div class="grzxLNav">
+            <!--<div class="grzxLNavABox">-->
+                <!--<a href="javascript:;" ui-sref=".topic" class="site_hoverCssA btn_ALink">我的话题</a>-->
+            <!--</div>-->
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/comment" ng-show="!isYSH" ui-sref=".comment">我的评论<i class="news_i ng-binding ng-hide" ng-bind="user.commentsNum" ng-show="user.commentsNum>0">0</i></a>
+            </div>
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/letter" ui-sref=".letter">我的私信<i class="news_i ng-binding ng-hide" ng-bind="user.letterNum" ng-show="user.letterNum>0">0</i></a>
+            </div>
+            <div class="grzxLNavABox ng-hide" ng-show="isYSH">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/message" ui-sref=".message">系统消息<i class="news_i ng-binding ng-hide" ng-bind="user.systemMessNum" ng-show="user.systemMessNum>0">0</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="grzxLNavItem">
+        <h3>设置</h3>
+
+        <div class="grzxLNav">
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/userinfo" ui-sref=".userinfo">个人资料</a>
+            </div>
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/change-password" ui-sref=".changePassword">修改密码</a>
+            </div>
+            <div class="grzxLNavABox">
+                <a class="site_hoverCssA btn_ALink" href="#/user-center/address" ui-sref=".address">收货地址</a>
+            </div>
+        </div>
+    </div>
+
+</div></div></div></div></body>
+</html>

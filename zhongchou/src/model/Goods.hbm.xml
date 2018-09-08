@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="model">
+<class name="Goods"  lazy="false">
+   <id name="goodsId" >
+     <generator class="native"/>
+   </id>
+   <property name="userId" />
+   <property name="userName" />
+   <property name="goodsName" />
+   <property name="descri" />
+   <property name="price" />
+   <property name="aimPrice" />
+   <property name="startDate" />
+   <property name="endDate"/>
+   <property name="supports"/>
+   <property name="nowPrice"/>
+   <property name="feedBack"/>
+    <property name="checkState" />
+    <property name="picture1"/>
+    <property name="shotcut1"/>
+    <property name="picture2"/>
+    <property name="shotcut2"/>
+    <property name="picture3"/>
+    <property name="shotcut3"/>
+</class>
+</hibernate-mapping>
