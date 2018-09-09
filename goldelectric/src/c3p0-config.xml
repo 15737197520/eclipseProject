@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config> 
+    <named-config name="mysql"> 
+        <!-- 数据库连接需要的4个字段 -->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>     
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/goldelectric</property>      
+        <property name="user">root</property>   
+        <property name="password">root</property> 
+        <!-- 数据库连接池的一些配置 -->
+        <property name="acquireIncrement">3</property>
+        <property name="initialPoolSize">10</property> 
+        <property name="maxIdleTime">30</property> 
+        <property name="maxPoolSize">100</property> 
+        <property name="minPoolSize">10</property> 
+        <property name="maxStatements">200</property> 
+    </named-config> 
+</c3p0-config>
